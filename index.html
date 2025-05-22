@@ -357,6 +357,8 @@
                 formData.append('mapId', 'MAP_F1FZ9ANANFAC');
                 formData.append('isRightHanded', 'true');
 
+                showNotification('Localization in progress...');
+
                 try {
                     const localizationResult = await queryLocalizationAPI(formData);
                     updateSceneWithLocalization(cube, localizationResult);
